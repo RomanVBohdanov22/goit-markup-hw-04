@@ -28,6 +28,8 @@ html {
   --button-to-order-active-clr: #188ce8;
   --button-to-order-box-shadow-color: rgba(0, 0, 0, 0.15);
   --opasity-const: 0.6;
+  --gradient-start-hero: rgba(47, 48, 58, 0.4);
+  --gradient-end-hero: rgba(47, 48, 58, 0.4);
 }
 
 *,
@@ -251,7 +253,12 @@ img {
   text-align: center;
   margin-top: 0;
 
-  background-image: url('../images/banner-studio-img-1.jpg');
+  background-image: linear-gradient(
+      to top left,
+      var(--gradient-start-hero),
+      var(--gradient-end-hero)
+    ),
+    url('../images/banner-studio-img-1.jpg');
   background-repeat: none;
   background-size: cover;
   background-attachment: scroll; /*fixed;*/
