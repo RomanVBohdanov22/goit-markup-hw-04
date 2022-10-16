@@ -254,7 +254,7 @@ img {
   background-image: url('../images/banner-studio-img-1.jpg');
   background-repeat: none;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll; /*fixed;*/
 }
 
 .hero-title {
