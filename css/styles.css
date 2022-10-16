@@ -251,6 +251,10 @@ img {
   text-align: center;
   margin-top: 0;
 }
+.hero {
+  background-image: url('../images/banner-studio-img-1.jpg');
+  background-repeat: none;
+}
 
 .hero-title {
   margin-top: 0;
