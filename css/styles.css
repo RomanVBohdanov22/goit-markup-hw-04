@@ -250,10 +250,11 @@ img {
   padding-bottom: 200px;
   text-align: center;
   margin-top: 0;
-}
-.hero {
+
   background-image: url('../images/banner-studio-img-1.jpg');
   background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-title {
