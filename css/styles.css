@@ -358,8 +358,10 @@ img {
 }
 
 .features-title,
-.team-title {
+.team-title,
+.regular-customers-title {
   margin-top: 0;
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   color: var(--fontcolorh3);
