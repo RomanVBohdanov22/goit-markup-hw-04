@@ -245,6 +245,10 @@ img {
   color: var(--icons-social-grey);
   /*margin-bottom: 30px;*/
 }
+/*
+.feature-item-icon-box {
+}*/
+
 .nav-list {
   display: flex;
   gap: 50px;
@@ -307,11 +311,11 @@ img {
   height: 16px;
 }
 .contacts-item:nth-child(1) > .link::before {
-  background-image: url('../images/symbol-defs-opt.svg#icon-envelope');
+  background-image: url('../images/envelope-test.svg');
   fill: var(--fontcolordescrp);
 }
 .contacts-item:nth-child(2) > .link::before {
-  background-image: url('../images/symbol-defs-opt.svg#icon-smartphone');
+  background-image: url('../images/smartphone-test.svg');
   fill: var(--fontcolordescrp);
 }
 .contacts-item:hover > .link::before {
@@ -403,7 +407,10 @@ img {
   background-color: var(--our-command-bg);
   height: 120px;
   width: 270px;
-  cursor: pointer;
+  /*cursor: pointer;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
   /*border-radius: 4px;*/
   /*border: 2px solid var(--clients-color);*/
   color: var(--clients-color);
@@ -411,6 +418,11 @@ img {
   padding-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
+}
+.feature-item-icon {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
 }
 .feature-title {
   margin-top: 0;
