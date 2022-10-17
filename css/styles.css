@@ -542,15 +542,27 @@ img {
   border-radius: 4px;
   border: 2px solid var(--clients-color);
   color: var(--clients-color);
-  padding-bottom: 16px;
+  /*padding-bottom: 16px;
   padding-top: 16px;
   padding-left: 32px;
-  padding-right: 32px;
+  padding-right: 32px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .regular-customer-wrapper:hover,
 .regular-customer-wrapper:focus {
   color: var(--bluetextclr);
   border-color: var(--bluetextclr);
+}
+
+.regular-customer-icon {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+}
+.regular-customer-wrapper:hover > .regular-customer-icon {
+  fill: currentColor;
 }
 /*.feature-item {
   width: 270px;
