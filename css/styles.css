@@ -158,6 +158,13 @@ img {
   /*display: flex;
   flex-direction: column;*/
 }
+.footer-block-system {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: left;
+  gap: 70px;
+}
 .footer-block {
   display: flex;
   flex-direction: column;
@@ -201,6 +208,13 @@ img {
   /*outline: 2px solid olivedrab;*/ /*Репета-стайл*/
 }
 
+.social-links-list {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+}
 .social-links-link {
   color: var(--whitetxt);
   text-decoration: none;
