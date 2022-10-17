@@ -225,11 +225,12 @@ img {
   background-color: var(--icons-bg-inactive);
   border-radius: 50%;
 }
-
+.footer-block-hello {
+}
 .footer .social-links-icon {
   width: 20px;
   height: 20px;
-  fill: orange; /*var(--whitetxt);*/
+  fill: var(--whitetxt);
 }
 .footer .social-links-link:hover {
   background-color: var(--bluebtn);
@@ -618,6 +619,6 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.cards-list .cards-item :hover {
+.cards-list .cards-item:hover {
   box-shadow: var(--card-wrapper-shadow);
 }
