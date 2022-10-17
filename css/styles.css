@@ -212,6 +212,7 @@ img {
   justify-content: center;
   gap: 10px;
 }
+.text-wrapper > .social-links-link,
 .social-links-link {
   color: var(--whitetxt);
   text-decoration: none;
@@ -227,20 +228,22 @@ img {
 }
 .footer-block-hello {
 }
-.footer .social-links-icon {
+.social-links-icon {
   width: 20px;
   height: 20px;
-  fill: var(--whitetxt);
+  fill: currentColor;
 }
-.footer .social-links-link:hover {
+.social-links-link:hover {
   background-color: var(--bluebtn);
 }
-.social-links-icon:hover {
+.social-links-link:hover .social-links-icon {
   /*color: var(--bluetextclr);*/
+  /*fill: orange;*/
+  fill: var(--whitetxt);
 }
 .text-wrapper .social-links-link {
   color: var(--icons-social-grey);
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 .nav-list {
   display: flex;
@@ -270,20 +273,20 @@ img {
 
 .nav-item > .link:hover,
 .contacts-item > .link:hover,
-.address-item > .address-link:hover,
-.social-links-item > .social-links-link:hover {
+.address-item > .address-link:hover
+/*.social-links-item > .social-links-link:hover*/ {
   color: var(--bluetextclr);
   cursor: pointer;
 }
 .nav-item > .link:active,
 .contacts-item > .link:active,
-.address-item > .address-link:active,
-.social-links-item > .social-links-link:active {
+.address-item > .address-link:active
+/*.social-links-item > .social-links-link:active*/ {
   color: var(--bluetextclr);
 }
 .nav-item > .link:focus,
-.contacts-item > .link:focus .address-item > .address-link:focus,
-.social-links-item > .social-links-link:focus {
+.contacts-item > .link:focus .address-item > .address-link:focus
+/*.social-links-item > .social-links-link:focus*/ {
   color: var(--bluetextclr);
 }
 .nav-item > .link,
