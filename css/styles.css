@@ -303,9 +303,13 @@ img {
   width: 16px;
   height: 16px;
 }
-.contacts-item > .link::before {
-  /*background-image: url("");*/
-  background-color: var(--fontcolordescrp);
+.contacts-item:nth-child(1) > .link::before {
+  background-image: url('../images/symbol-defs-opt.svg#icon-envelope');
+  fill: var(--fontcolordescrp);
+}
+.contacts-item:nth-child(2) > .link::before {
+  background-image: url('../images/symbol-defs-opt.svg#icon-smartphone');
+  fill: var(--fontcolordescrp);
 }
 .contacts-item:hover > .link::before {
   background-color: var(--bluebtn);
