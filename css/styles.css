@@ -4,6 +4,7 @@ html {
 :root {
   --bgcolor: #f5f5f5;
   --icons-social-grey: #afb1b8;
+  --icons-bg-inactive: rgba(255, 255, 255, 0.1);
   --bg-color-grey: #f5f4fa;
   --mainfont: 'Roboto', sans-serif;
   --bannerfont: 'Raleway', sans-serif;
@@ -216,6 +217,25 @@ img {
   text-decoration: none;
   letter-spacing: 0.03em;
   line-height: 1.71;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--icons-bg-inactive);
+  border-radius: 50%;
+}
+
+.footer .social-links-icon {
+  width: 20px;
+  height: 20px;
+  fill: orange; /*var(--whitetxt);*/
+}
+.footer .social-links-link:hover {
+  background-color: var(--bluebtn);
+}
+.social-links-icon:hover {
+  /*color: var(--bluetextclr);*/
 }
 .text-wrapper .social-links-link {
   color: var(--icons-social-grey);
@@ -242,6 +262,7 @@ img {
   font-weight: 700;
   line-height: 1.19;
 }
+
 .logo-accent {
   color: var(--bluetextclr);
 }
