@@ -557,8 +557,8 @@ img {
 }
 
 .regular-customer-icon {
-  width: 70px;
-  height: 70px;
+  width: 106px;
+  height: 60px;
   fill: currentColor;
 }
 .regular-customer-wrapper:hover > .regular-customer-icon {
