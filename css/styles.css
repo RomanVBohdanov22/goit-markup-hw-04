@@ -593,12 +593,21 @@ img {
   border-color: var(--bluetextclr);
 }
 
-.regular-customer-icon {
+.regular-customer-wrapper .regular-customer-link {
+  margin-top: inherit;
+  margin-bottom: inherit;
+  color: inherit;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.regular-customer-link .regular-customer-icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
-.regular-customer-wrapper:hover > .regular-customer-icon {
+.regular-customer-wrapper:hover > .regular-customer-icon,
+.regular-customer-wrapper:focus > .regular-customer-icon {
   fill: currentColor;
 }
 /*.feature-item {
