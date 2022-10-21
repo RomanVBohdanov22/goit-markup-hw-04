@@ -233,10 +233,12 @@ img {
   height: 20px;
   fill: currentColor;
 }
-.social-links-link:hover {
+.social-links-link:hover,
+.social-links-link:focus {
   background-color: var(--bluebtn);
 }
-.social-links-link:hover .social-links-icon {
+.social-links-link:hover .social-links-icon,
+.social-links-link:focus .social-links-icon {
   /*color: var(--bluetextclr);*/
   /*fill: orange;*/
   fill: var(--whitetxt);
@@ -298,13 +300,48 @@ img {
 /*, .address-item > .address-link *//*розширення клікабельної зони*/
 {
   display: block;
-  padding: 32px 0;
+  padding: 32px 0px;
 }
 .all-big-chars {
   text-transform: uppercase;
 }
-/*icons at header*/
-.contacts-item > .link::before {
+.class-icon-link {
+  width: auto;
+  /*height: 32px;*/
+  /*padding: 0;*/
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  /*line-height: 1.14;*/
+  /*gap: 20px;*/
+}
+.link:hover > .envelope-icon,
+.link:hover > .smartphone-icon {
+  fill: currentColor;
+}
+.link:focus > .envelope-icon,
+.link:focus > .smartphone-icon {
+  fill: currentColor;
+}
+.link:active > .envelope-icon,
+.link:active > .smartphone-icon {
+  fill: currentColor;
+}
+.class-icon-link > .envelope-icon {
+  width: 16px;
+  height: 12px;
+  /*margin-right: 10px;*/
+  fill: currentColor;
+}
+.class-icon-link > .smartphone-icon {
+  width: 10px;
+  height: 12px;
+  /*margin-right: 10px;*/
+  fill: currentColor;
+}
+/*icons at header
+.contacts-item > .link::before,
+.contacts-item > .link::after {
   content: '';
   display: inline-block;
   width: 16px;
