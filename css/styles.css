@@ -242,13 +242,10 @@ img {
 }
 .social-links-link:hover .social-links-icon,
 .social-links-link:focus .social-links-icon {
-  /*color: var(--bluetextclr);*/
-  /*fill: orange;*/
   fill: var(--whitetxt);
 }
 .text-wrapper .social-links-link {
   color: var(--icons-social-grey);
-  /*margin-bottom: 30px;*/
 }
 /*
 .feature-item-icon-box {
@@ -666,16 +663,20 @@ img {
   margin-right: var(--card-item-gap);
   margin-bottom: var(--card-item-gap);
 }
-.card-wrapper {
+.cards-list .card-wrapper {
   padding: 20px 24px;
   border: 1px solid var(--background-card-color);
   border-top: none;
   background-color: var(--white-bg);
   /*box-shadow: var(--card-wrapper-shadow);*/
 }
-.cards-item-img {
+.cards-list .cards-item-link {
+  text-decoration: none;
+  display: block;
 }
-.cards-item-title {
+.cards-list .cards-item-img {
+}
+.cards-list .cards-item-title {
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 18px;
@@ -684,7 +685,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.cards-item-text {
+.cards-list .cards-item-text {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 16px;
@@ -692,6 +693,7 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-.cards-list .cards-item:hover {
+.cards-list .cards-item:hover,
+.cards-list .cards-item:focus {
   box-shadow: var(--card-wrapper-shadow);
 }
