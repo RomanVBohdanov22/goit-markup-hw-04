@@ -314,7 +314,7 @@ img {
   /*padding: 0;*/
   display: flex;
   /*align-items: center;*/
-  justify-content: center;
+  /*justify-content: center;*/
   /*line-height: 1.14;*/
   /*gap: 20px;*/
 }
@@ -333,13 +333,13 @@ img {
 .class-icon-link > .envelope-icon {
   width: 16px;
   height: 12px;
-  /*margin-right: 10px;*/
+  margin-right: 10px;
   fill: currentColor;
 }
 .class-icon-link > .smartphone-icon {
   width: 10px;
   height: 12px;
-  /*margin-right: 10px;*/
+  margin-right: 10px;
   fill: currentColor;
 }
 /*icons at header
@@ -364,13 +364,16 @@ img {
 /**/
 
 .hero {
-  width: 100%;
+  /*width: 100%;*/
+  max-width: 1600px;
   background-color: var(--bannerclr);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  margin-top: 0;
-
+  background-repeat: no-repeat;
+  /*margin-top: 0;*/
+  margin: 0 auto;
+  background-position: center;
   background-image: linear-gradient(
       to top left,
       var(--gradient-start-hero),
@@ -454,10 +457,6 @@ img {
   /*border-radius: 4px;*/
   /*border: 2px solid var(--clients-color);*/
   color: var(--clients-color);
-  padding-bottom: 16px;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 .feature-item-icon {
   width: 70px;
@@ -573,33 +572,22 @@ img {
 }
 .regular-customer-wrapper {
   /*border-top: none;*/
-  margin-top: 0;
   margin-bottom: 0px;
-  border-color: var(--clients-color);
-  height: 92px;
-  width: 170px;
-  cursor: pointer;
-  border-radius: 4px;
-  border: 2px solid var(--clients-color);
-  color: var(--clients-color);
-  /*padding-bottom: 16px;
-  padding-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;*/
+  margin-top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.regular-customer-wrapper:hover,
-.regular-customer-wrapper:focus {
-  color: var(--bluetextclr);
-  border-color: var(--bluetextclr);
 }
 
 .regular-customer-wrapper .regular-customer-link {
   margin-top: inherit;
   margin-bottom: inherit;
-  color: inherit;
+  border-color: var(--clients-color);
+  height: 92px;
+  width: 170px;
+  border-radius: 4px;
+  border: 1px solid var(--clients-color);
+  color: var(--clients-color);
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
@@ -609,8 +597,13 @@ img {
   height: 60px;
   fill: currentColor;
 }
-.regular-customer-wrapper:hover > .regular-customer-icon,
-.regular-customer-wrapper:focus > .regular-customer-icon {
+.regular-customer-link:hover,
+.regular-customer-link:focus {
+  color: var(--bluetextclr);
+  border-color: var(--bluetextclr);
+}
+.regular-customer-link:hover > .regular-customer-icon,
+.regular-customer-link:focus > .regular-customer-icon {
   fill: currentColor;
 }
 /*.feature-item {
